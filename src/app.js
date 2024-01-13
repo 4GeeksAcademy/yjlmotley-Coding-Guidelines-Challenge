@@ -24,17 +24,23 @@ let generateExcuse = () => {
     "right outside the door!"
   ];
 
-  function random(indx) {
-    return Math.floor(Math.random() * indx.length);
+  function random(array) {
+    return array[Math.floor(Math.random() * array.length)];
   }
+  // function get(array) {
+  //   return array[random(array)];
+  // }
 
   return (
-    who[random(who)] +
-    " " +
-    action[random(action)] +
-    " " +
-    what[random(what)] +
-    " " +
-    when[random(when)]
+    random(who) + " " + random(action) + " " + random(what) + " " + random(when)
   );
+  // return (
+  //   who[random(who)] +
+  //   " " +
+  //   action[random(action)] +
+  //   " " +
+  //   what[random(what)] +
+  //   " " +
+  //   when[random(when)]
+  // );
 };
