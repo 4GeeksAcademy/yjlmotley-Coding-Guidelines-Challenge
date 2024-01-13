@@ -17,30 +17,13 @@ let generateExcuse = () => {
   let who = ["A dog", "A stranger", "A cat", "The squirrel", "A crow"];
   let action = ["stole my", "grabbed my", "ripped my", "pooped on my"];
   let what = ["homework", "lunch money", "backpack", "hat"];
-  let when = [
-    "this morning!",
-    "on the street!",
-    "in the park!",
-    "right outside the door!"
-  ];
+  let when = ["this morning!", "on the street!", "in the park!", "right outside the door!"];
 
   function random(array) {
     return array[Math.floor(Math.random() * array.length)];
   }
-  // function get(array) {
-  //   return array[random(array)];
-  // }
 
   return (
     random(who) + " " + random(action) + " " + random(what) + " " + random(when)
   );
-  // return (
-  //   who[random(who)] +
-  //   " " +
-  //   action[random(action)] +
-  //   " " +
-  //   what[random(what)] +
-  //   " " +
-  //   when[random(when)]
-  // );
 };
